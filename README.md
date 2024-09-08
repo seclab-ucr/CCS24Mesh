@@ -15,7 +15,33 @@ Black Hat USA 2024
 
 # Affected Vendors/Products
 [Netgear Orbi](https://www.netgear.com/home/wifi/mesh/orbi/) \
-[ASUS AiMesh](https://www.asus.com/microsite/aimesh/en/index.html) \
+[ASUS AiMesh](https://www.asus.com/microsite/aimesh/en/index.html) 
+
+| Vendor  | Model  | Version  | Vulnerable?  | Patched?  |
+|---|---|---|---|---|
+| ASUS  | RT-BE96U  | <= 3.0.0.6.102_32882  | Yes  |  Yes (3.0.0.6.102_34488) |
+| ASUS  | RT-AC68P  | <= 3.0.0.4.386_51668  | Yes  |  Yes (3.0.0.4.386_51685) |
+| ASUS  | RT-AX57  | <= 3.0.0.4.386_52294  | Yes  | Yes (3.0.0.4.386_52303)  |
+| ASUS  | RT-AX88U  | <= 3.0.0.4.388_24198  | Yes  | Yes (3.0.0.4.388_24209)  |
+| ASUS  | RT-AX86 Series(RT-AX86U/RT-AX86S)  | <= 3.0.0.4.388_24231  | Yes  | Yes (3.0.0.4.388_24243)  |
+| ASUS  | RT-AC86U  | <= 3.0.0.4.386_51915  | Yes  | Yes (3.0.0.4.386_51925)  |
+| ASUS  | RT-AX55  | <= 3.0.0.4.386_52294  | Yes  | Yes (3.0.0.4.386_52303)  |
+| ASUS  | RT-AX88U  | <= 3.0.0.4.388_24198  | Yes  | Yes (3.0.0.4.388_24209)  |
+| ASUS  | XT8  | <= 3.0.0.4.388_24609  | Yes  | Yes (3.0.0.4.388_24621) |
+| ASUS  | RT-AC66U B1  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | AiMesh AC1900 WiFi System (RT-AC67U 2 Pack)  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | RT-AC68U  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | RP-AC1900  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | ROG Rapture GT-BE98 Pro  | <= 3.0.0.6.102_32882 | Yes  | Yes (3.0.0.6.102_34491) |
+| ASUS  | RT-AC68R  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | RT-AC2900  | <= 3.0.0.4.386_51915 | Yes  | Yes (3.0.0.4.386_51925)|
+| ASUS  | RT-AC1900P  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685)|
+| ASUS  | RT-AC1750 B1  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | RT-AC1900U  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685)|
+| ASUS  | RT-AC1900  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+| ASUS  | ASUS ExpertWiFi EBR63  | <= 3.0.0.6.102_32645 | Yes  | Yes (3.0.0.6.102_44544) |
+| ASUS  | RT-AC68UF  | <= 3.0.0.4.386_51668 | Yes  | Yes (3.0.0.4.386_51685) |
+
 [TP-Link Deco](https://www.tp-link.com/us/deco-mesh-wifi/product-family/) \
 [Linksys](https://store.linksys.com/shop/shop-home/whole-home-mesh-wifi/) \
 [Wyze](https://www.wyze.com/products/wyze-mesh-router-pro) \
