@@ -18,8 +18,11 @@ We query the ARP cache to obtain the MAC address of the gateway 192.168.50.1 to 
 
 After running this script, we obtain "found: 1718158561". This is the value of T(pri). We thus reconstruct cfg_group:
 
-`➜  ~ md5 -s 04:42:1A:B4:C1:B0_1718158561
-633ed873722e542e6ccb037737a38c5d`
+```
+➜  ~ md5 -s 04:42:1A:B4:C1:B0_1718158561
+
+633ed873722e542e6ccb037737a38c5d
+```
 
 "633ed873722e542e6ccb037737a38c5d" is the correct value of "cfg_group" stored in mesh nodes' NVRAM.  
 
