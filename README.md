@@ -56,4 +56,4 @@ Note that the two types of security flaws we found are general, impacting the wh
 # Open-source Timeline
 The full exploitation code will be available before the ACM CCS 2024 publication date (10/2024). ~~At this stage (08/2024), we still want to give vendors and users more time to deploy patches.~~
 
-(10/1/2024) ASUS AiMesh Attack is fully available! See here: ![ASUS AiMesh Attack](./ASUS/)
+(10/1/2024) ASUS AiMesh Attack is fully available! See here: [ASUS AiMesh Attack](./ASUS/)
