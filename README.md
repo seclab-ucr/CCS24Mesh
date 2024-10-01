@@ -51,7 +51,7 @@ Black Hat USA 2024
 Note that the two types of security flaws we found are general, impacting the whole Wi-Fi mesh industry. If you don't find your brand of choice above, it is still possible that your mesh network is vulnerable. 
 
 # Write-ups
-![ASUS AiMesh Attack](./ASUS/)
+[ASUS AiMesh Attack](./ASUS/)
 
 # Open-source Timeline
 The full exploitation code will be available before the ACM CCS 2024 publication date (10/2024). ~~At this stage (08/2024), we still want to give vendors and users more time to deploy patches.~~
