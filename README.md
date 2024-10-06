@@ -44,7 +44,12 @@ Black Hat USA 2024
 
 [TP-Link Deco](https://www.tp-link.com/us/deco-mesh-wifi/product-family/) \
 [Linksys](https://store.linksys.com/shop/shop-home/whole-home-mesh-wifi/) \
-[Wyze](https://www.wyze.com/products/wyze-mesh-router-pro) \
+[Wyze](https://www.wyze.com/products/wyze-mesh-router-pro)
+
+| Vendor  | Model  | Version  | Vulnerable?  | Patched?  |
+|---|---|---|---|---|
+| Wyze Wi-Fi 6E Mesh Router Pro  | AXE5400  | <= 1.0.1.109  | Yes  |  Yes (1.0.1.121 (May 7, 2024)) |
+
 [AmpliFi](https://amplifi.com/) \
 [Wi-Fi EasyMesh Standard](https://www.wi-fi.org/discover-wi-fi/wi-fi-easymesh)
 
