@@ -60,10 +60,13 @@ Note that the two types of security flaws we found are general, impacting the wh
 
 [Linksys Mesh Network Attack](./Linksys/)
 
+[Wyze Mesh Network Attack](./Wyze/)
+
 # Open-source Timeline
 The full exploitation code will be available before the ACM CCS 2024 publication date (10/2024). ~~At this stage (08/2024), we still want to give vendors and users more time to deploy patches.~~
+
+(10/6/2024) Wyze Mesh Network Attack is fully available! See here: [Wyze Mesh Network Attack](./Wyze/)
 
 (10/5/2024) Linksys Mesh Network Attack is fully available! See here: [Linksys Mesh Network Attack](./Linksys/)
 
 (10/1/2024) ASUS AiMesh Attack is fully available! See here: [ASUS AiMesh Attack](./ASUS/)
-
