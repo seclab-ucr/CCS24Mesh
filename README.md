@@ -64,8 +64,12 @@ Note that the two types of security flaws we found are general, impacting the wh
 
 [EasyMesh Attack](./EasyMesh/)
 
+[TP-Link Attack](./TP-Link/)
+
 # Open-source Timeline
 The full exploitation code will be available before the ACM CCS 2024 publication date (10/2024). ~~At this stage (08/2024), we still want to give vendors and users more time to deploy patches.~~
+
+(11/28/2024) TP-Link Mesh Network Attack is fully available! See here: [TP-Link Attack](./TP-Link/)
 
 (10/9/2024) EasyMesh Attack is fully available! See here: [EasyMesh Attack](./EasyMesh/)
 
