@@ -16,19 +16,19 @@ To jailbreak your own Deco X55, you first use [fetch_dropbear_pub.py](./fetch_dr
 
 Save this result as `my_tplink_pub.pub`.
 
-Then use GGNFS/MSIEVE to crack and obtain the private key. (This step is left as an exercise. )
+Then use GGNFS/MSIEVE to crack and obtain the private key. (This step is left as an exercise. See solution [here](./crack_512_rsa_solution.md))
 
-You will finally get something like this file `my_tplink_pri.pem`: 
+You will finally get something like this file `private_key_tplink_new.pem`: 
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
-MIIBOgIBAAJBAMKlS+Br+eTaW74rEuxoSqtFcFnN+UAnZhg3C9I3MLxGj7LFMnGl
+MIIBOwIBAAJBAMKlS+Br+eTaW74rEuxoSqtFcFnN+UAnZhg3C9I3MLxGj7LFMnGl
 n5XyoFjNnngqe1z46PHSdl1HnfQIh1GGyF0CAwEAAQJASS8fPU070wkqz3Cgl9SK
 pqTgHlPscGuf3mDsB+kKYO869F1yQ2m9WvIEBTKXoPhO7q3XSj3B9tO/6j4iGm5+
-nQIhAOTfjOc3Bosm1iouOATZ0el0nK8iuNL0urZTIIFFF79rAiEA2bc3hL64S/pX
-3gkFW769eIRAnJaqY4Tqdk2oQvcD8VcCIQCHlKJcqe0Xa5c8/4ox3XMLMAhNe20v
-ksg0j8PWsD5kJwIgMfhNc9hacIXbGQk1A6O51Sl1svsZzJG7Rr/4OLZ9Xy0CIB/+
-YrHsml/teW8NOGTRHbicu+F7H+X97BD1No1yQiaV
+nQIhANm3N4S+uEv6V94JBVu+vXiEQJyWqmOE6nZNqEL3A/FXAiEA5N+M5zcGiybW
+Ki44BNnR6XScryK40vS6tlMggUUXv2sCIDH4TXPYWnCF2xkJNQOjudUpdbL7GcyR
+u0a/+Di2fV8tAiEAh5SiXKntF2uXPP+KMd1zCzAITXttL5LINI/D1rA+ZCcCIQC7
+SBysEP2k6R2B51xDo5mvpJFco3t4drPjB8z0jPlZ8Q==
 -----END RSA PRIVATE KEY-----
 ```
 
@@ -47,7 +47,7 @@ Show and verify their signatures match, just to make sure:
 
 Input: 
 
-`puttygen my_tplink_pri.pem -O private -o my_tplink_pri.ppk`
+`puttygen private_key_tplink_new.pem -O private -o my_tplink_pri.ppk`
 
 ## Attack Step 4: Authenticate to the Dropbear server on the gateway
 
