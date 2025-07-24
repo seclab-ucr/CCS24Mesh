@@ -2,7 +2,7 @@
 Do you know your home mesh network can be hacked? Check out!
 
 # Introduction
-In the year of 2023, we discovered novel attacks for home wireless mesh networks. Simply speaking, the control protocols over backhaul wireless links can be tampered with. As a result, an attacker who has a (fronthaul) Wi-Fi passphrase can obtain root shells on access points, and/or steal fronthaul/backhaul Wi-Fi passphrases. Obtaining a root shell allows an attacker to capture/inject wireless packets, to change Wi-Fi passphrases to attacker-controlled values, among others. Stealing fronthaul/backhaul Wi-Fi passphrases allows an attacker to evade network access revocations. 
+We discovered novel attacks for home wireless mesh networks. Simply speaking, the control protocols over backhaul wireless links can be tampered with. As a result, an attacker who has a (fronthaul) Wi-Fi passphrase can obtain root shells on access points, and/or steal fronthaul/backhaul Wi-Fi passphrases. Obtaining a root shell allows an attacker to capture/inject wireless packets, to change Wi-Fi passphrases to attacker-controlled values, among others. Stealing fronthaul/backhaul Wi-Fi passphrases allows an attacker to evade network access revocations. 
 
 # Publication
 Untangling the Knot: Breaking Access Control in Home Wireless Mesh Networks [[PDF]](https://www.cs.ucr.edu/%7Ezhiyunq/pub/ccs24_wireless_mesh.pdf) \
